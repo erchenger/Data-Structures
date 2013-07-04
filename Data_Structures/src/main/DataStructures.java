@@ -30,13 +30,29 @@ public class DataStructures {
 		
 		switch(choice){
 			case 1:
-				System.out.println("Arrays");
+				printSectionName("Arrays");
 				ArrayExample ae = new ArrayExample();
 				ae.run();
+				break;
+			case 2:
+				printSectionName("Linked Lists");
+
+				break;
+			case 3:
+				printSectionName("Trees");
+
+				break;
+			case 4:
+				printSectionName("Hashmaps");
+
 				break;
 			default:
 				break;
 		}
+	}
+	
+	private static void printSectionName(String name){
+		System.out.println(name);
 	}
 	
 	
