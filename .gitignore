@@ -4,4 +4,4 @@
 *.jar
 *.war
 *.ear
-DataStructures/bin/
+/Data_Structures/bin/*
