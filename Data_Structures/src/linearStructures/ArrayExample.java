@@ -6,6 +6,7 @@ import java.util.Arrays;
 
 import utils.MenuUtils;
 import algorithms.BinarySearch;
+import algorithms.HeapSort;
 /**
  * @author Elliott Chenger
  *
@@ -24,6 +25,8 @@ public class ArrayExample implements DSBaseClass{
 		menu.show();
 		instantiateArray(10);
 		populateArray();
+		displayArray();
+		intArray = HeapSort.sort(intArray);
 		displayArray();
 		int answer = BinarySearch.intArray(intArray);
 		menu.setMessage("The binary search found: "+answer, false);
