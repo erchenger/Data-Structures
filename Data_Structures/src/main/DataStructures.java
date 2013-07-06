@@ -3,6 +3,10 @@ package main;
 import linearStructures.ArrayExample;
 import exceptions.ArgumentException;
 
+/**
+ * @author Elliott Chenger
+ *
+ */
 public class DataStructures {
 	
 	public static void main (String args[]){
@@ -26,6 +30,10 @@ public class DataStructures {
 			}
 	}
 	
+	/**
+	 * argumentChoice handles user selection from args
+	 * @param choice
+	 */
 	private static void argumentChoice(int choice){
 		
 		switch(choice){
@@ -51,6 +59,11 @@ public class DataStructures {
 		}
 	}
 	
+	/**
+	 * printSectionName does exactly what it sounds like it prints the section
+	 * 	that the user is about to enter.
+	 * @param name
+	 */
 	private static void printSectionName(String name){
 		System.out.println(name);
 	}
