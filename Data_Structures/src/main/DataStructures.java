@@ -1,7 +1,6 @@
 package main;
 
 import linearStructures.ArrayExample;
-import utils.MenuUtils;
 import exceptions.ArgumentException;
 
 public class DataStructures {

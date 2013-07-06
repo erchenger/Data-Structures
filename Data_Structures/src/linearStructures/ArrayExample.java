@@ -2,10 +2,10 @@ package linearStructures;
 
 import interfaces.DSBaseClass;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import utils.MenuUtils;
+import algorithms.BinarySearch;
 
 public class ArrayExample implements DSBaseClass{
 	private int[] intArray;
@@ -18,6 +18,9 @@ public class ArrayExample implements DSBaseClass{
 		instantiateArray(10);
 		populateArray();
 		displayArray();
+		int answer = BinarySearch.intArray(intArray);
+		menu.setMessage("The binary search found: "+answer, false);
+		menu.show();
 	}
 	
 	
@@ -35,7 +38,7 @@ public class ArrayExample implements DSBaseClass{
 	}
 	
 	private void displayArray(){
-		System.out.print(Arrays.toString(intArray));
+		System.out.println(Arrays.toString(intArray));
 	}
 	
 	
