@@ -43,8 +43,7 @@ public class HeapSort {
 			int swap = root;
 			if (inputArray[swap]<inputArray[child])
 				swap = child;
-				
-			
+
 			if (child+1<=end && inputArray[swap]<inputArray[child+1])
 				swap = child+1;
 			
